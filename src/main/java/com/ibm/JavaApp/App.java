@@ -45,7 +45,7 @@ public class App
 	}
 	
 	public int mulFunction(int firstNum, int secondNum) {
-		return firstNum*secondNum;
+		return firstNum/secondNum;
 	}
 	
 	public static void main( String[] args )
