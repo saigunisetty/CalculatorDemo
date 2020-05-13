@@ -55,6 +55,7 @@ public class App
         
         App app = new App(firstNum, secondNum);
         
+        System.out.println("Build Completed");
         String output = String.format("\n*** Your Calculator ***\n\nFirst: %d\nSecond: %d\n\nSum : %d\nDifference : %d\nProduct : %d\n\n", app.firstNum, app.secondNum, app.addFunction(firstNum, secondNum), app.subFunction(firstNum, secondNum), app.mulFunction(firstNum, secondNum));
 	    System.out.println(output);
         
