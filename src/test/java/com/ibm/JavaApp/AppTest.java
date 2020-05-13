@@ -1,38 +1,28 @@
 package com.ibm.JavaApp;
 
-import junit.framework.Test;
-import junit.framework.TestCase;
-import junit.framework.TestSuite;
+import org.junit.Test;
+import static org.junit.Assert.assertEquals;
+
 
 /**
  * Unit test for simple App.
  */
-public class AppTest 
-    extends TestCase
-{
-    /**
-     * Create the test case
-     *
-     * @param testName name of the test case
-     */
-    public AppTest( String testName )
-    {
-        super( testName );
+public class AppTest {
+   
+	App app = new App(2, 3);
+	@Test
+    public void twoAndThreeIsFive() throws Exception {
+    	assertEquals(app.addFunction(2, 3),5);
     }
 
-    /**
-     * @return the suite of tests being tested
-     */
-    public static Test suite()
-    {
-        return new TestSuite( AppTest.class );
+	@Test
+    public void threeMinusTwoIsOne() throws Exception {
+        assertEquals(app.subFunction(2, 3),1);
     }
-
-    /**
-     * Rigourous Test :-)
-     */
-    public void testApp()
-    {
-        assertTrue( true );
+    
+	@Test
+    public void threeXThreeIsNine() throws Exception {
+        assertEquals(app.mulFunction(3, 3), 9);
     }
+    
 }

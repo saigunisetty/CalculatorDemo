@@ -41,11 +41,11 @@ public class App
 	}
 	
 	public int subFunction(int firstNum, int secondNum) {
-		return firstNum-secondNum;
+		return secondNum-firstNum;
 	}
 	
 	public int mulFunction(int firstNum, int secondNum) {
-		return firstNum/secondNum;
+		return firstNum*secondNum;
 	}
 	
 	public static void main( String[] args )
